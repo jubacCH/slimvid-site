@@ -1,0 +1,79 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8" />
+<meta name="viewport" content="width=device-width, initial-scale=1.0" />
+<title>Slimvid — Free Up Storage</title>
+<meta name="description" content="Slimvid frees up storage on your iPhone by shrinking videos and clearing duplicate photos — on-device, no ads." />
+<style>
+  :root { --ink:#0F1A17; --accent:#0FB893; --accent-dark:#0C8C74; --bg:#F6F9F8; --muted:#5a6e69; }
+  * { box-sizing: border-box; margin: 0; padding: 0; }
+  body { font-family: -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, Helvetica, Arial, sans-serif;
+         color: var(--ink); background: var(--bg); line-height: 1.6; -webkit-font-smoothing: antialiased; }
+  .wrap { max-width: 760px; margin: 0 auto; padding: 0 24px; }
+  header { padding: 28px 0; display: flex; align-items: center; gap: 14px; }
+  header img { width: 46px; height: 46px; border-radius: 12px; }
+  header .name { font-size: 22px; font-weight: 800; }
+  .hero { text-align: center; padding: 56px 0 40px; }
+  .hero h1 { font-size: clamp(32px, 6vw, 52px); font-weight: 800; line-height: 1.1; }
+  .hero h1 .g { color: var(--accent-dark); }
+  .hero p { font-size: 19px; color: var(--muted); margin-top: 18px; max-width: 560px; margin-left:auto; margin-right:auto; }
+  .features { display: grid; grid-template-columns: 1fr; gap: 16px; padding: 24px 0 48px; }
+  @media (min-width: 640px){ .features { grid-template-columns: 1fr 1fr 1fr; } }
+  .card { background: #fff; border: 1.5px solid #E3EAE8; border-radius: 20px; padding: 24px; }
+  .card .ico { width: 48px; height: 48px; border-radius: 13px; background: rgba(15,184,147,.12);
+               display:flex; align-items:center; justify-content:center; font-size:24px; margin-bottom: 14px; }
+  .card h3 { font-size: 18px; font-weight: 700; }
+  .card p { color: var(--muted); font-size: 15px; margin-top: 6px; }
+  .support { background:#fff; border:1.5px solid #E3EAE8; border-radius:20px; padding:32px; text-align:center; margin-bottom:48px; }
+  .support h2 { font-size: 26px; font-weight: 800; }
+  .support p { color: var(--muted); margin-top: 10px; }
+  .support a.btn { display:inline-block; margin-top:18px; background:var(--accent); color:#fff; text-decoration:none;
+                   font-weight:700; padding:14px 28px; border-radius:14px; }
+  footer { text-align: center; color: var(--muted); padding: 32px 0 56px; font-size: 14px; }
+  footer a { color: var(--accent-dark); }
+</style>
+</head>
+<body>
+  <div class="wrap">
+    <header>
+      <img src="icon.png" alt="Slimvid icon" />
+      <span class="name">Slimvid</span>
+    </header>
+
+    <section class="hero">
+      <h1>Free up storage.<br /><span class="g">Keep your memories.</span></h1>
+      <p>Slimvid shrinks the big videos on your iPhone and clears duplicate photos —
+         so you get gigabytes back without deleting a single memory.</p>
+    </section>
+
+    <section class="features">
+      <div class="card">
+        <div class="ico">🎬</div>
+        <h3>Compress videos</h3>
+        <p>Shrink videos in bulk or one at a time. Never makes a file bigger.</p>
+      </div>
+      <div class="card">
+        <div class="ico">🧹</div>
+        <h3>Find duplicates</h3>
+        <p>Spot near-identical photos and clear the extras — keep the best one.</p>
+      </div>
+      <div class="card">
+        <div class="ico">🔒</div>
+        <h3>Private &amp; ad-free</h3>
+        <p>Everything runs on your device. No uploads, no tracking, no ads.</p>
+      </div>
+    </section>
+
+    <section class="support" id="support">
+      <h2>Need help?</h2>
+      <p>Questions, feedback or a bug to report? We're happy to help.</p>
+      <a class="btn" href="mailto:slimvid@b8n.ch">Contact Support</a>
+    </section>
+
+    <footer>
+      &copy; 2026 Slimvid · <a href="privacy.html">Privacy Policy</a>
+    </footer>
+  </div>
+</body>
+</html>
